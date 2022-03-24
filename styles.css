@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2? família=Outfit:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: 0;
+}
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    --black: rgba(0,0,0,0.05);
+    --blue-c: hsl(228, 45%, 44%);
+}
+img{
+    max-width: 100%;
+}
+body{ /* tudo o corpo */
+    display: flex;
+    margin: 1.25rem;
+    background-color: var(--light-gray);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100vh -1px); /* Centralizar o item */
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+}
+.container{ /* Centralizar o objeto */
+    background-color: var(--white);
+    padding: 1.25rem;
+    margin-bottom: 2.1rem;
+    border-radius: 0.622rem;
+    box-shadow: 5px 5px 5px var(--black);
+}
+.container img{
+    border-radius: 0.622rem;
+    margin-bottom: 1rem;
+}
+.container h1{
+    color: var(--dark-blue);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.container p{
+    color: var(--grayish-blue);
+    text-align: center;
+}
+.attribution{ 
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a{ 
+    color: var(--blue-c) 
+}
+@media (min-width: 500px){ /* Feito em todo o projeto*/
+    .container{
+        width: 400px;
+    }
+    
+}
